@@ -203,7 +203,7 @@
         <h1>Parrainage</h1>
         <p>Site de rencontre fillot/parrain n°1</p>
         <ul class="actions">
-          <li><a href="/umlp/filr2018pimp-1c/master/resources/views/layouts/inscription.html" class="bouton">Inscription</a></li>
+          <li><a href="https://cdn.rawgit.com/umlp/filr2018pimp-1c/master/resources/views/layouts/inscription.html" class="bouton">Inscription</a></li>
           <li><a href="https://cdn.rawgit.com/umlp/filr2018pimp-1c/master/resources/views/layouts/connexion.html" class="bouton">Connexion</a></li>
         </ul>
       </div>

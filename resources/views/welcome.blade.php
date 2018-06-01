@@ -183,7 +183,7 @@
         <p>Site de rencontre fillot/parrain n°1</p>
         <ul class="actions">
           <li><a href="https://cdn.rawgit.com/umlp/filr2018pimp-1c/master/resources/views/layouts/inscription.html" class="bouton">Inscription</a></li>
-          <li><a href="https://cdn.rawgit.com/umlp/filr2018pimp-1c/master/resources/views/layouts/connexion.html" class="bouton">Connexion</a></li>
+          <li><a href="https://parrainage.herokuapp.com/connexion" class="bouton">Connexion</a></li>
         </ul>
       </div>
     </section>

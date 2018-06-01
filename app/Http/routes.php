@@ -23,7 +23,10 @@ Route::group(['middleware' => ['web']], function () {
     });
     Route::get('connexion', function() {
            return view('connexion/connexion');
-       });
+    });
+    Route::get('inscription', function() {
+           return view('inscription/inscription');
+    });
     /**
      * Add New Task
      */

@@ -19,7 +19,7 @@ Route::group(['middleware' => ['web']], function () {
      * Show Task Dashboard
      */
     Route::get('/', function () {
-        return view('welcome');
+        return view('task');
     });
 
     /**

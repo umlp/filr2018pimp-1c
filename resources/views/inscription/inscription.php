@@ -32,7 +32,7 @@
               </tr>
             </table>
           </fieldset>
-          <a href="connexion.html" class="bouton">Inscription</a>
+          <a href="https://parrainage.herokuapp.com/connexion" class="bouton">Inscription</a>
         </form>
       </div>
     </section>

@@ -27,6 +27,15 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('inscription', function() {
            return view('inscription/inscription');
     });
+    Route::get('home', function() {
+           return view('home/home');
+    });
+    Route::get('home/agenda', function() {
+           return view('agenda/agenda');
+    });
+    Route::get('home/evenement', function() {
+           return view('evenement/evenement');
+    });
     /**
      * Add New Task
      */

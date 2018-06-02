@@ -14,7 +14,7 @@
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/evenement.css">
+    <link rel="stylesheet" href="https://parrainage.herokuapp.com/css/evenement.css">
     <script type='text/javascript' src='//code.jquery.com/jquery-1.11.1.min.js'></script>
     <script type='text/javascript' src='//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
     <script type='text/javascript'></script>
@@ -38,7 +38,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="home.html">Parrainage</a>
+      <a class="navbar-brand" href="https://parrainage.herokuapp.com/home">Parrainage</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -88,7 +88,7 @@
 <span class="year">année</span>
 <span class="time">ALL DAY</span>
 </time>
-<img alt="LOGO inte STPI" src="image/logointe.jpg" />
+<img alt="LOGO inte STPI" src="https://parrainage.herokuapp.com/image/logointe.jpg" />
 <div class="info">
 
 <div class="row">

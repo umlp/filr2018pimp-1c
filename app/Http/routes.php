@@ -37,7 +37,7 @@ Route::group(['middleware' => ['web']], function () {
            return view('evenement/evenement');
     });
     Route::get('home/evenement2', function() {
-           return view('evenement/evenement2.blade');
+           return view('evenement/evenement2');
     });
     /**
      * Add New Task

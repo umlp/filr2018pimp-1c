@@ -77,7 +77,7 @@
           <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
           <li>
-            <a href="index.html">
+            <a href="https://parrainage.herokuapp.com/connexion">
               <span class="glyphicon glyphicon-log-out"></span> Déconnexion</a>
           </li>
         </ul>

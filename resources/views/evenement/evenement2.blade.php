@@ -1,4 +1,4 @@
-@extends("../tasks.blade.php")
+@extends('template')
 
 @section('titre')
   Page evenement

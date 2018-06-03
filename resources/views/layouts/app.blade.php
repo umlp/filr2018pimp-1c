@@ -1,212 +1,82 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Parrainage</title>
-    <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/home/manzambi/Bureau/ASI 3.2/UML/html/fontawesome-free-5.0.11/web-fonts-with-css/css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+
     <style>
-    #menu-vertical ul{
-      margin: 0;
-      padding: 0;
-      position: fixed;
-      width: 150px;
-      background-color: #f1f1f1;
-      top: 0px;
-      height: 100%;
-      overflow: auto;
-    }
-
-    #menu-vertical li a {
-      display: block;
-      color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-
-    #menu-vertical ul li {
-      list-style:none;
-      text-align: center;
-    }
-
-    #menu-vertical a:hover:not(.active){
-      background-color: #555;
-        color: white;
-    }
-
-    #menu-vertical a.active{
-      background-color: #4CAF50;
-      color: white;
-    }
-    /*Bouton*/
-    .bouton{
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        position: relative;
-        top: 30px;
-        list-style: none;
-    }
-
-    /*Bannière*/
-    body.is-loading #banniere > .inner{
-      opacity: 0;
-      /* -moz-transform:translateY(1em);
-      -webkit-transform : translateY(1em);
-      -ms-transform:translateY(1em);
-      transform: translateY(1em); */
-    }
-
-    #banniere{
-      display: -ms-flexbox;
-      -ms-flex-pack: center;
-      -ms-flex-align:center;
-      padding : 8em 0 6em 0;
-      -moz-align-items:center;
-      -webkit-align-items : center;
-      -ms-align-items:center;
-      align-items: center;
-      display: -moz-flex;
-      display: -webkit-flex;
-      display : -ms-flex;
-      display: flex;
-      -moz-justify-content:center;
-      -webkit-justify-content:center;
-      -ms-justify-content:center;
-      justify-content: center;
-      min-height: 60vh;
-      height: 60vh
-      position :relative;
-      background: black;
-      background-image: url(https://www.tendanceouest.com/photos/maxi/225295.jpg);
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: center;
-      text-align: center;
-      color: white;
-    }
-
-    #banniere:before {
-          -moz-transition: opacity 3s ease;
-          -webkit-transition: opacity 3s ease;
-          -ms-transition: opacity 3s ease;
-          transition: opacity 3s ease;
-          -moz-transition-delay: 0.25s;
-          -webkit-transition-delay: 0.25s;
-          -ms-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-          content: '';
-          display: block;
-          background-color: #000;
-          height: 100%;
-          left: 0;
-          opacity: 0.65;
-          position: absolute;
-          top: 0;
-          width: 100%;
-          z-index: 1;
+        body {
+            font-family: 'Lato';
         }
 
-        #banniere .inner {
-          /* -moz-transform: none;
-          -webkit-transform: none;
-          -ms-transform: none;
-          transform: none;
-          -moz-transition: opacity 1s ease, transform 1s ease;
-          -webkit-transition: opacity 1s ease, transform 1s ease;
-          -ms-transition: opacity 1s ease, transform 1s ease;
-          transition: opacity 1s ease, transform 1s ease; */
-          position: relative;
-          opacity: 1;
-          z-index: 3;
-          /*padding:  0em;*/
+        .fa-btn {
+            margin-right: 6px;
         }
-        #banniere li{
-          list-style: none;
-        }
-
-        #banniere h1 {
-          font-size: 4em;
-          line-height: 1em;
-          margin: 0 0 0.5em 0;
-          padding: 0;
-          color: #FFF;
-        }
-
-        #banniere p {
-          font-size: 1.5em;
-          margin-bottom: 1.75em;
-        }
-
-        #banniere a {
-          color: #FFF;
-          text-decoration: none;
-        }
-
-        @media screen and (max-width: 1280px) {
-
-          #banniere h1 {
-            font-size: 3.5em;
-          }
-
-        }
-
-        @media screen and (max-width: 736px) {
-
-          #banniere {
-            background-attachment: scroll;
-          }
-
-            #banniere h1 {
-              font-size: 2.25em;
-            }
-
-            #banniere p {
-              font-size: 1.25em;
-            }
-
-        }
-    /*main*/
-
-    #main{
-      margin-left: 25%;
-      padding: 1px 1px;
-      height: 100%;
-    }
-
     </style>
-  </head>
-  <body>
-    <!-- Menu - Vertical -->
-    <!--  <div id = "menu-vertical">
-        <ul>
-          <li><a href="#"> Parrain/Fillot </a> </li>
-          <li><a href="#"> Profil </a> </li>
-          <li><a href="#"> Evénement </a> </li>
-          <li><a href="#">Agenda</a> </li>
-          <li><a href="#">Communication</a> </li>
-          <li><a href="#"><span id="home" class="fas fa-home"></span></a> </li>
-        </ul>
-      </div>
-    -->
-    <!-- Menu - Bannière -->
-    <section id="banniere">
-      <div class="inner">
-        <h1>Parrainage</h1>
-        <p>Site de rencontre fillot/parrain n°1</p>
-        <ul class="actions">
-          <li><a href="https://cdn.rawgit.com/umlp/filr2018pimp-1c/master/resources/views/layouts/inscription.html" class="bouton">Inscription</a></li>
-          <li><a href="https://cdn.rawgit.com/umlp/filr2018pimp-1c/master/resources/views/layouts/connexion.html" class="bouton">Connexion</a></li>
-        </ul>
-      </div>
-    </section>
-  </body>
+</head>
+<body id="app-layout">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Branding Image -->
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    Laravel
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url('/home') }}">Home</a></li>
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Authentication Links -->
+                    @if (Auth::guest())
+                        <li><a href="{{ url('/login') }}">Login</a></li>
+                        <li><a href="{{ url('/register') }}">Register</a></li>
+                    @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    @endif
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @yield('content')
+
+    <!-- JavaScripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+</body>
 </html>

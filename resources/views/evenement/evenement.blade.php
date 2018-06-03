@@ -4,6 +4,9 @@
   Evenements
 @endsection
 
+@section('css')
+@endsection
+
 @section('contenu')
   <div class="container">
     <div class="row">

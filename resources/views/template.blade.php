@@ -51,9 +51,9 @@
             <li><a href="#">Page 1-3</a></li>
           </ul>
         </li> -->
-          <li class="active">
+          <!-- <li>
             <a href="https://parrainage.herokuapp.com/home/evenement">Evènement</a>
-          </li>
+          </li> -->
           <li>
             <a href="#">Profil</a>
           </li>
@@ -78,7 +78,7 @@
 
   @yield('contenu')
 
-  
+
 
   <!-- JavaScripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

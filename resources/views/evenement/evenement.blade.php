@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('titre')
-  Page evenement
+  Evenements
 @endsection
 
 @section('contenu')

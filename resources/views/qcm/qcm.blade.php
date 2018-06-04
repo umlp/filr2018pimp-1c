@@ -15,6 +15,7 @@
 @endsection
 
 @section('script')
+  <script type='text/javascript'>
     var NumQuestion = 0;
     $("#creerQuestion").click(function () {
       NumQuestion += 1;
@@ -30,4 +31,5 @@
       $fieldset.append(
         '<div><input type="radio" name="C' + idRadio + '"><input type="text" id="T'+name+'.'+nbChoix+'" placeholder="Choix ' + nbChoix + '"/></div>');
     })
+  </script>
 @endsection

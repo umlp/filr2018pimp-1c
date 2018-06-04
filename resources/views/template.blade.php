@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="https://parrainage.herokuapp.com/qcm">Questionnaire</a>
+            <a href="https://parrainage.herokuapp.com/home/qcm">Questionnaire</a>
           </li>
           <!-- <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>

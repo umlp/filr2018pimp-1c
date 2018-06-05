@@ -41,7 +41,7 @@ Route::group(['middleware' => ['web']], function () {
       return view('qcm/qcm');
     });
     Route::post('home/qcm',function() {
-      QcmController::show();
+      return QcmController::show();
     });
     /**
      * Add New Task

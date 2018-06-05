@@ -13,6 +13,7 @@
 
 use App\Task;
 use Illuminate\Http\Request;
+use App\Http\Controllers\QcmController;
 
 Route::group(['middleware' => ['web']], function () {
     /**
@@ -38,6 +39,9 @@ Route::group(['middleware' => ['web']], function () {
     });
     Route::get('home/qcm',function() {
       return view('qcm/qcm');
+    });
+    Route::post('home/qcm',function() {
+      QcmController::show();
     });
     /**
      * Add New Task

@@ -19,7 +19,7 @@
     var NumQuestion = 0;
     $("#creerQuestion").click(function () {
       NumQuestion += 1;
-      $("#post").before(
+      $("#creerQuestion").before(
         '<fieldset id=' + NumQuestion + '><legend>Question ' + NumQuestion + '</legend><input type="text" class="CorpsQuestion" placeholder="Entrez votre question"><input type="button" class="addChoix" value="ajouter un choix"/></fieldset>'
       );
     })
